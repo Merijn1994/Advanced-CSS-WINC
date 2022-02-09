@@ -1,0 +1,67 @@
+.wrapper{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "n n n n n n n n n n i i"
+    "a a a a a a a a a a a a"
+    "b b b b b b b b b b b b";
+    border: 2px;
+    border-style: solid;
+    border-radius: 4px;
+    width: 350px;
+    margin: 10px;
+}
+.name{
+    grid-area: n;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.name h3{
+    margin-bottom: 0;
+}
+.name h4{
+    color: rgb(172, 162, 162);
+    margin-top: 0;
+
+}
+.img{
+    grid-area: i;
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.action{
+    grid-area: a;
+}
+p{
+    color: rgb(70, 62, 62);
+    font-size: 18px;
+    margin-left: 10px;
+}
+span{
+    font-weight:bold;
+}
+.buttons{
+    grid-area: b;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+}
+button:first-of-type{
+    border-color: green;
+    border-radius: 5px;
+    color: green;
+    background-color: white;
+    margin-right: 0;
+    margin-left: 110px;
+}
+button:last-of-type{
+    border-color: red;
+    border-radius: 5px;
+    color: red;
+    background-color: white;
+    margin-left: 0;
+}
+
